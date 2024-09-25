@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "ai-from-scratch"
+version = "0.1.0"
+description = ""
+package-mode = false
+authors = ["Ali Firooz"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+setuptools = "^75.1.0"
+numpy = "^2.1.1"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+orjson = "^3.10.7"
+jupyter = "^1.1.1"
+tqdm = "^4.66.5"
+toml = "^0.10.2"
+pyyaml = "^6.0.2"
+scipy = "^1.14.1"
+lxml = "^5.3.0"
+
+# Optional dependencies (extras: torch)
+# usage: `$ poetry install --extras torch` or `$ poetry install --all-extras`
+torch = {version = "^2.4.1+cpu", source = "torchcpu", optional = true}
+torchvision = {version = "^0.19.1+cpu", source = "torchcpu", optional = true}
+torchaudio = {version = "^2.4.1+cpu", source = "torchcpu", optional = true}
+
+
+[tool.poetry.extras]
+torch = ["torch", "torchaudio", "torchvision"]
+
+
+[[tool.poetry.source]]
+# for installing pytorch on cpu only
+# read more on: https://python-poetry.org/docs/repositories/#project-configuration
+# usage: `$ poetry add --source torchcpu torch torchvision torchaudio`
+name = "torchcpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "supplemental"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
