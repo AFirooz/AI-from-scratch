@@ -21,6 +21,23 @@ $$b_w = -2.28$$
 
 Where $\sigma$ is applied element-wise to its input vector.
 
+```mermaid
+graph LR
+    X1(("x<sub>1</sub>")) --> H1
+    X2(("x<sub>2</sub>")) --> H1
+    B1((b<sub>1</sub>)) --> H1
+
+    X1 --> H2
+    X2 --> H2
+    B1 --> H2
+    B2((b<sub>2</sub>)) --> Y
+
+    H1((P<sub>1</sub>)) --> Y((out))
+    H2((P<sub>2</sub>)) --> Y
+    Y --> O[y]
+
+    style O fill:transparent, stroke-width:0px
+```
 
 # Activation Functions
 
