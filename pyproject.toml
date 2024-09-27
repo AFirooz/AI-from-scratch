@@ -23,14 +23,29 @@ lxml = "^5.3.0"
 
 # Optional dependencies (extras: torch)
 # usage: `$ poetry install --extras torch` or `$ poetry install --all-extras`
-torch = {version = "^2.4.1+cpu", source = "torchcpu", optional = true}
-torchvision = {version = "^0.19.1+cpu", source = "torchcpu", optional = true}
-torchaudio = {version = "^2.4.1+cpu", source = "torchcpu", optional = true}
+# torch = {version = "^2.4.1+cpu", source = "torchcpu", optional = true}
+# torchvision = {version = "^0.19.1+cpu", source = "torchcpu", optional = true}
+# torchaudio = {version = "^2.4.1+cpu", source = "torchcpu", optional = true}
+
+torch = [
+    { platform = "darwin", version = "^2.4.1", source = "pypi" },
+    { platform = "linux", version = "^2.4.1+cpu", source = "torchcpu" },
+]
+torchvision = [
+	{platform = "darwin", version = "^0.19.1", source = "pypi"},
+	{platform = "linux", version = "^0.19.1+cpu", source = "torchcpu"}
+	]
+torchaudio = [
+	{platform = "darwin", version = "^2.4.1", source = "pypi"},
+	{platform = "linux", version = "^2.4.1+cpu", source = "torchcpu"}
+	]
+
 ipympl = "^0.9.4"
+scikit-image = "^0.24.0"
 
 
-[tool.poetry.extras]
-torch = ["torch", "torchaudio", "torchvision"]
+#[tool.poetry.extras]
+#torch = ["torch", "torchaudio", "torchvision"]
 
 
 [[tool.poetry.source]]
