@@ -1,0 +1,6 @@
+[submodule "RAG"]
+	path = RAG
+	url = https://github.com/langchain-ai/rag-from-scratch
+[submodule "Autograd"]
+	path = Autograd
+	url = https://github.com/karpathy/micrograd
