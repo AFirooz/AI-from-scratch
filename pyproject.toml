@@ -39,6 +39,7 @@ pytorch-lightning = "^2.4.0"
 ipympl = "^0.9.4"
 scikit-image = "^0.24.0"
 networkx = "^3.3"
+graphviz = "^0.20.3"
 
 
 [[tool.poetry.source]]
