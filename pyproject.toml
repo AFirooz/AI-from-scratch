@@ -41,6 +41,7 @@ scikit-image = "^0.24.0"
 networkx = "^3.3"
 graphviz = "^0.20.3"
 varname = "^0.13.5"
+scikit-learn = "^1.5.2"
 
 
 [[tool.poetry.source]]
