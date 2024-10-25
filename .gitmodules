@@ -1,3 +1,6 @@
 [submodule "Autograd"]
 	path = Autograd
 	url = https://github.com/karpathy/micrograd
+[submodule "RAG"]
+	path = RAG
+	url = git@github.com:AFirooz/submodule-rag-from-scratch.git
