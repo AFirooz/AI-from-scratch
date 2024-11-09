@@ -13,5 +13,6 @@
     "hide-files.files": [
         "ReverseAutoDiff/LICENSE",
         "ReverseAutoDiff/setup.py"
-    ]
+    ],
+    "python.analysis.autoImportCompletions": true
 }
