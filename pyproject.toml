@@ -34,14 +34,13 @@ torchaudio = [
 	{platform = "linux", version = "^2.4.1+cpu", source = "torchcpu"}
 	]
 
-pytorch-lightning = "^2.4.0"
-
 ipympl = "^0.9.4"
 scikit-image = "^0.24.0"
 networkx = "^3.3"
 graphviz = "^0.20.3"
 varname = "^0.13.5"
 scikit-learn = "^1.5.2"
+lightning = "^2.4.0"
 
 
 [[tool.poetry.source]]
