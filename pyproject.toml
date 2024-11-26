@@ -49,7 +49,7 @@ lightning = "^2.4.0"
 # usage: `$ poetry add --source torchcpu torch torchvision torchaudio`
 name = "torchcpu"
 url = "https://download.pytorch.org/whl/cpu"
-priority = "supplemental"
+priority = "explicit"
 
 
 [build-system]
