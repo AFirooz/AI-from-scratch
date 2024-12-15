@@ -14,5 +14,8 @@
         "ReverseAutoDiff/LICENSE",
         "ReverseAutoDiff/setup.py"
     ],
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.autoImportCompletions": false,
+    "python.linting.pylintArgs": [
+    "--init-hook",
+    ]
 }
